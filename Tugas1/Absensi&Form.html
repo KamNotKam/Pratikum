@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Halaman HTML & Halaman Form Mahasiswa</title>
+</head>
+<body>
+	<table border="1"
+	style="border-collapse: collapse;">
+		<tr>
+			<td>
+				<table border="1"
+				style="margin: auto;">
+					<h1>Absensi Mahasiswa Teknik Informatika</h1>
+					<tr>
+						<th rowspan="3">NO</th>
+						<th rowspan="3">NPM</th>
+						<th rowspan="3">NAMA</th>
+						<th colspan="7">Pertemuan</th>
+					</tr>
+					<tr>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>4</th>
+						<th>5</th>
+						<th>6</th>
+						<th>7</th>
+					</tr>
+					<tr>
+						<th>9-Feb</th>
+						<th>16-Feb</th>
+						<th>23-Feb</th>
+						<th>2-Mar</th>
+						<th>9-Mar</th>
+						<th>16-Mar</th>
+						<th>23-Mar</th>
+					</tr>
+					<tr>
+						<th>1</th>
+						<th>1234567</th>
+						<th>Agus</th>
+						<th>V</th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+					<tr>
+						<th>2</th>
+						<th>7654321</th>
+						<th>Bambang</th>
+						<th>V</th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+					<tr>
+						<th>3</th>
+						<th>1726354</th>
+						<th>Susi</th>
+						<th>V</th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+				</table>
+				<br>			
+			</td>
+		</tr>
+	</table>
+	<br>
+	<h1>Form Mahasiswa</h1>
+    <form>
+        <fieldset style="width: 41%;
+        border: 2px solid black;"
+        >
+            <legend>Data Mahasiswa</legend>
+            <table>
+                <tr>
+                    <td><label for="nama">Nama</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="nama"></td>
+                </tr>
+                <tr>
+                    <td><label for="npm">NPM</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="npm"></td>
+                </tr>
+                <tr>
+                    <td><label for="Kelas">Kelas</label></td>
+                    <td>:</td>
+                    <td>
+                        <select name="Kelas" id="Kelas">
+                        	<option value="-">-</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="jk">Jenis Kelamin</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jk" id="pria">
+                        <label for="pria">Pria</label>
+                        <input type="radio" name="jk" id="wanita">
+                        <label for="wanita">Wanita</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width: 41%;
+        border: 2px solid black;"
+        >
+            <legend>Tempat Tinggal Mahasiswa</legend>
+            <table>
+                <tr>
+                    <td><label for="alamat">Alamat</label></td>
+                    <td>:</td>
+                    <td><textarea name="Alamat" id="alamat"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="kecamatan">Kecamatan</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="kecamatan"></td>
+                </tr>
+                <tr>
+                    <td><label for="kab">Kabupaten/Kotamadya</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="kab"></td>
+                </tr>
+                <tr>
+                    <td><label for="provinsi">Provinsi</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="provinsi"></td>
+                </tr>
+                <tr>
+                    <td><label for="kp">Kode Pos</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="kp"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width: 41%;
+        border: 2px solid black;"
+        >
+            <legend>Lain-lainnya</legend>
+            <table>
+                <tr>
+                    <td><label for="lang">Bahasa Pemrograman</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" id="cpp">
+                        <label for="cpp">C/C++</label>
+                        <input type="checkbox" id="go">
+                        <label for="go">Go Lang</label>
+                        <input type="checkbox" name="phyton" id="phyton">
+                        <label for="phyton">Phyton</label>
+                        <input type="checkbox" name="lainnya" id="lainnya">
+                        <label for="lainnya">Lainnya</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" name="php" id="php">
+                        <label for="php">PHP</label>
+                        <input type="checkbox" name="js" id="js">
+                        <label for="js">Javascript</label>
+                        <input type="checkbox" name="ruby" id="ruby">
+                        <label for="ruby">Ruby</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kegiatan</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="ormawa" id="ormawa">
+                        <label for="ormawa">Organisasi Kemahasiswaan</label>
+                        <input type="checkbox" name="olagraga" id="olahraga">
+                        <label for="olagraga">Bidang Olahraga</label>
+                        <input type="checkbox" name="lainnya" id="lainnya">
+                        <label for="lainnya">Lainnya</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="orex" id="orex">
+                        <label for="orex">Organisasi di Luar Kampus</label>
+                        <input type="checkbox" name="seni" id="seni">
+                        <label for="seni">Bidang Seni</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
